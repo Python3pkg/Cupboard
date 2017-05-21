@@ -28,4 +28,4 @@ if __name__ == '__main__':
             line = line[4:]
         stitched.append(line)
     readme = '\n'.join(stitched)
-    print readme
+    print(readme)

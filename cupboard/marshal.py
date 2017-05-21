@@ -5,8 +5,8 @@ file: marshal.py
 description: Tools for marshalling objects / data around
 author: Luke de Oliveira (lukedeo@vaitech.io)
 """
-from __future__ import unicode_literals
-from __future__ import print_function
+
+
 
 from future import standard_library
 

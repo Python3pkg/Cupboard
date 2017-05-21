@@ -1,4 +1,4 @@
-from __future__ import unicode_literals
+
 
 import pytest
 import numpy as np
@@ -164,9 +164,9 @@ def test_update():
 
             d.update(u)
 
-            assert len(d.keys()) == 4
+            assert len(list(d.keys())) == 4
 
-            assert 'b' in d.keys()
+            assert 'b' in list(d.keys())
 
             d.rmkeys()
             u.rmkeys()
@@ -193,7 +193,7 @@ def test_iteritems_items():
 
         keys, values = [], []
 
-        for k, v in d.items():
+        for k, v in list(d.items()):
             keys.append(k)
             values.append(v)
 
@@ -202,7 +202,7 @@ def test_iteritems_items():
 
         keys, values = [], []
 
-        for k, v in d.iteritems():
+        for k, v in d.items():
             keys.append(k)
             values.append(v)
 

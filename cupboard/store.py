@@ -6,8 +6,8 @@ description: actual implementation of wrapper & logic
 author: Luke de Oliveira (lukedeo@vaitech.io)
 """
 
-from __future__ import unicode_literals
-from __future__ import print_function
+
+
 from builtins import object
 from contextlib import contextmanager
 import logging

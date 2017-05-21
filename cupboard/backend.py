@@ -6,7 +6,7 @@ description: backend implementations
 author: Luke de Oliveira (lukedeo@vaitech.io)
 """
 
-from __future__ import unicode_literals
+
 
 from builtins import zip
 from builtins import map
@@ -161,7 +161,7 @@ def _leveldb_keys(db, projexpr):
 
 
 def _redis_keys(db, projexpr):
-    return list(map(projexpr, db.keys()))
+    return list(map(projexpr, list(db.keys())))
 
 
 # values
